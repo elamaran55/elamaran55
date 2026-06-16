@@ -8,10 +8,10 @@
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_HANDLE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/elamaran-duraimurugan-763a27300)
 [![Gmail](https://img.shields.io/badge/Gmail-amudhanmaran44-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amudhanmaran44@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YOUR_GITHUB_USERNAME)
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=YOUR_GITHUB_USERNAME.YOUR_GITHUB_USERNAME&color=00C896&style=for-the-badge&label=Profile+Views)](https://github.com/YOUR_GITHUB_USERNAME)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/elamaran55)
+[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=elamaran55.elamaran55&color=00C896&style=for-the-badge&label=Profile+Views)](https://github.com/elamaran55)
 
 </div>
 
