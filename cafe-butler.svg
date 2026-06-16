@@ -1,0 +1,44 @@
+<svg viewBox="0 0 230 190" xmlns="http://www.w3.org/2000/svg">
+  <!-- route -->
+  <path id="route" d="M34,158 L34,34 L94,104 L150,58 L196,104 L34,158 Z"
+        fill="none" stroke="#0066CC" stroke-width="2" stroke-dasharray="3 6" opacity="0.55"/>
+
+  <!-- kitchen -->
+  <rect x="18" y="18" width="32" height="28" rx="5" fill="none" stroke="#00C896" stroke-width="2.5"/>
+  <path d="M26,38 v-8 a6,6 0 0 1 12,0 v8" fill="none" stroke="#00C896" stroke-width="2"/>
+  <text x="34" y="58" text-anchor="middle" font-family="monospace" font-size="8" fill="#7d93b2">KITCHEN</text>
+
+  <!-- home dock -->
+  <rect x="18" y="146" width="32" height="24" rx="5" fill="none" stroke="#0066CC" stroke-width="2.5"/>
+  <path d="M22,158 h24" stroke="#0066CC" stroke-width="2"/>
+  <text x="34" y="178" text-anchor="middle" font-family="monospace" font-size="8" fill="#7d93b2">HOME</text>
+
+  <!-- tables -->
+  <g>
+    <circle cx="94" cy="104" r="13" fill="none" stroke="#00C896" stroke-width="2.5"/>
+    <circle cx="94" cy="104" r="3" fill="#00C896"/>
+    <text x="94" y="124" text-anchor="middle" font-family="monospace" font-size="8" fill="#7d93b2">T1</text>
+  </g>
+  <g>
+    <circle cx="150" cy="58" r="13" fill="none" stroke="#00C896" stroke-width="2.5"/>
+    <circle cx="150" cy="58" r="3" fill="#00C896"/>
+    <text x="150" y="40" text-anchor="middle" font-family="monospace" font-size="8" fill="#7d93b2">T2</text>
+  </g>
+  <g>
+    <circle cx="196" cy="104" r="13" fill="none" stroke="#00C896" stroke-width="2.5"/>
+    <circle cx="196" cy="104" r="3" fill="#00C896"/>
+    <text x="196" y="124" text-anchor="middle" font-family="monospace" font-size="8" fill="#7d93b2">T3</text>
+  </g>
+
+  <!-- robot -->
+  <g>
+    <animateMotion dur="9s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#route"/>
+    </animateMotion>
+    <rect x="-8" y="-7" width="16" height="14" rx="4" fill="#001F3F" stroke="#00C896" stroke-width="2"/>
+    <rect x="-5" y="-13" width="10" height="4" rx="1.5" fill="#0066CC"/>
+    <circle cx="0" cy="-2" r="2" fill="#00C896">
+      <animate attributeName="opacity" values="1;0.3;1" dur="0.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

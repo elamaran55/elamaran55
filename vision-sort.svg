@@ -1,0 +1,39 @@
+<svg viewBox="0 0 230 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- camera housing -->
+  <rect x="92" y="14" width="46" height="20" rx="4" fill="none" stroke="#00C896" stroke-width="2.5"/>
+  <circle cx="115" cy="24" r="5" fill="#00C896"/>
+  <text x="115" y="10" text-anchor="middle" font-family="monospace" font-size="8" fill="#7d93b2">CAMERA</text>
+
+  <!-- scan beam, pulses as an item passes underneath -->
+  <polygon points="103,34 127,34 140,86 90,86" fill="#00C896" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.18;0.18;0;0" keyTimes="0;0.30;0.40;0.55;0.65;1" dur="3.6s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- bounding box detection flash -->
+  <rect x="100" y="78" width="30" height="20" rx="2" fill="none" stroke="#00C896" stroke-width="1.6" stroke-dasharray="3 3" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.30;0.40;0.55;0.65;1" dur="3.6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- conveyor belt -->
+  <rect x="14" y="92" width="170" height="14" rx="3" fill="none" stroke="#0066CC" stroke-width="2.5"/>
+  <line x1="14" y1="99" x2="184" y2="99" stroke="#0066CC" stroke-width="2" stroke-dasharray="8 8" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" values="0;-32" dur="1s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- bin -->
+  <path d="M186,92 L206,92 L200,128 L186,128 Z" fill="none" stroke="#00C896" stroke-width="2.5"/>
+  <text x="196" y="142" text-anchor="middle" font-family="monospace" font-size="8" fill="#7d93b2">HDPE</text>
+
+  <!-- moving item, travels along belt then drops into the bin -->
+  <rect x="-7" y="-7" width="14" height="14" rx="2" fill="#001F3F" stroke="#00C896" stroke-width="2">
+    <animateMotion dur="3.6s" repeatCount="indefinite"
+      path="M24,92 L168,92 L196,92 L196,118"
+      keyTimes="0;0.72;0.86;1"
+      keyPoints="0;0.72;0.86;1"
+      calcMode="linear"/>
+  </rect>
+
+  <!-- start stack waiting to enter belt -->
+  <rect x="16" y="80" width="10" height="10" rx="1.5" fill="none" stroke="#0066CC" stroke-width="1.6" opacity="0.7"/>
+  <rect x="16" y="68" width="10" height="10" rx="1.5" fill="none" stroke="#0066CC" stroke-width="1.6" opacity="0.5"/>
+</svg>

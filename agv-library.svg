@@ -1,0 +1,36 @@
+<svg viewBox="0 0 230 170" xmlns="http://www.w3.org/2000/svg">
+  <!-- floor line the AGV follows -->
+  <path id="track" d="M20,140 C60,140 60,90 100,90 C140,90 140,40 180,40"
+        fill="none" stroke="#0066CC" stroke-width="3" stroke-dasharray="2 8" opacity="0.6"/>
+
+  <!-- shelves -->
+  <rect x="6" y="14" width="22" height="40" rx="2" fill="none" stroke="#00C896" stroke-width="2"/>
+  <line x1="6" y1="28" x2="28" y2="28" stroke="#00C896" stroke-width="1.5"/>
+  <line x1="6" y1="40" x2="28" y2="40" stroke="#00C896" stroke-width="1.5"/>
+  <text x="17" y="62" text-anchor="middle" font-family="monospace" font-size="7" fill="#7d93b2">SHELF</text>
+
+  <rect x="196" y="14" width="22" height="40" rx="2" fill="none" stroke="#00C896" stroke-width="2"/>
+  <line x1="196" y1="28" x2="218" y2="28" stroke="#00C896" stroke-width="1.5"/>
+  <line x1="196" y1="40" x2="218" y2="40" stroke="#00C896" stroke-width="1.5"/>
+  <text x="207" y="62" text-anchor="middle" font-family="monospace" font-size="7" fill="#7d93b2">SHELF</text>
+
+  <!-- AGV with a small book stack riding on top -->
+  <g>
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#track"/>
+    </animateMotion>
+    <rect x="-12" y="-6" width="24" height="12" rx="3" fill="#001F3F" stroke="#0066CC" stroke-width="2"/>
+    <circle cx="-7" cy="7" r="3" fill="#0066CC"/>
+    <circle cx="7" cy="7" r="3" fill="#0066CC"/>
+    <!-- IR sensor glow -->
+    <circle cx="0" cy="6" r="2" fill="#00C896">
+      <animate attributeName="opacity" values="1;0.25;1" dur="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <!-- books -->
+    <rect x="-9" y="-15" width="6" height="9" fill="#00C896"/>
+    <rect x="-2" y="-17" width="6" height="11" fill="#0066CC"/>
+    <rect x="5" y="-14" width="6" height="8" fill="#00C896"/>
+  </g>
+
+  <text x="115" y="160" text-anchor="middle" font-family="monospace" font-size="8" fill="#7d93b2">IR LINE-FOLLOW · PID</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg viewBox="0 0 230 170" xmlns="http://www.w3.org/2000/svg">
+  <!-- voronoi-style partitioned floor cells -->
+  <polygon points="6,6 96,6 70,82 6,70" fill="#0066CC" opacity="0.12" stroke="#0066CC" stroke-width="1.5"/>
+  <polygon points="96,6 170,6 150,60 70,82" fill="#00C896" opacity="0.12" stroke="#00C896" stroke-width="1.5"/>
+  <polygon points="170,6 224,6 224,70 150,60" fill="#0066CC" opacity="0.12" stroke="#0066CC" stroke-width="1.5"/>
+  <polygon points="6,70 70,82 60,150 6,150" fill="#00C896" opacity="0.12" stroke="#00C896" stroke-width="1.5"/>
+  <polygon points="70,82 150,60 224,70 224,150 60,150" fill="#0066CC" opacity="0.10" stroke="#0066CC" stroke-width="1.5"/>
+
+  <!-- five robots, each patrolling within its own cell -->
+  <circle cx="40" cy="35" r="5" fill="#00C896">
+    <animate attributeName="cx" values="40;58;30;40" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="35;48;28;35" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="120" cy="38" r="5" fill="#0066CC">
+    <animate attributeName="cx" values="120;104;134;120" dur="2.9s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="38;55;30;38" dur="2.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="195" cy="35" r="5" fill="#00C896">
+    <animate attributeName="cx" values="195;180;205;195" dur="3.1s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="35;25;48;35" dur="3.1s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="32" cy="115" r="5" fill="#0066CC">
+    <animate attributeName="cx" values="32;48;20;32" dur="3.6s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="115;130;100;115" dur="3.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="150" cy="115" r="5" fill="#00C896">
+    <animate attributeName="cx" values="150;180;120;150" dur="4.1s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="115;100;130;115" dur="4.1s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="115" y="164" text-anchor="middle" font-family="monospace" font-size="8" fill="#7d93b2">AUCTION-BASED VORONOI COVERAGE</text>
+</svg>

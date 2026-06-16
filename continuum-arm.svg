@@ -1,0 +1,58 @@
+<svg viewBox="0 0 230 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- base plinth -->
+  <rect x="25" y="172" width="60" height="14" rx="4" fill="#001F3F" stroke="#0066CC" stroke-width="2"/>
+  <text x="55" y="195" text-anchor="middle" font-family="monospace" font-size="9" fill="#7d93b2">6-SECTION ARM</text>
+
+  <!-- 6-segment chain, each <g> rotates a little out of phase to create a travelling bend -->
+  <g transform="translate(55,172)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-6;6;-6" keyTimes="0;0.5;1" dur="2.6s" begin="0s" repeatCount="indefinite"/>
+      <line x1="0" y1="0" x2="0" y2="-24" stroke="#00C896" stroke-width="11" stroke-linecap="round"/>
+      <circle cx="0" cy="-24" r="4.5" fill="#00C896"/>
+
+      <g transform="translate(0,-24)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="9;-9;9" keyTimes="0;0.5;1" dur="2.6s" begin="0.13s" repeatCount="indefinite"/>
+          <line x1="0" y1="0" x2="0" y2="-24" stroke="#00C896" stroke-width="10" stroke-linecap="round"/>
+          <circle cx="0" cy="-24" r="4.2" fill="#00C896"/>
+
+          <g transform="translate(0,-24)">
+            <g>
+              <animateTransform attributeName="transform" type="rotate" values="-12;12;-12" keyTimes="0;0.5;1" dur="2.6s" begin="0.26s" repeatCount="indefinite"/>
+              <line x1="0" y1="0" x2="0" y2="-23" stroke="#00C896" stroke-width="9" stroke-linecap="round"/>
+              <circle cx="0" cy="-23" r="4" fill="#00C896"/>
+
+              <g transform="translate(0,-23)">
+                <g>
+                  <animateTransform attributeName="transform" type="rotate" values="15;-15;15" keyTimes="0;0.5;1" dur="2.6s" begin="0.39s" repeatCount="indefinite"/>
+                  <line x1="0" y1="0" x2="0" y2="-22" stroke="#00C896" stroke-width="8" stroke-linecap="round"/>
+                  <circle cx="0" cy="-22" r="3.6" fill="#00C896"/>
+
+                  <g transform="translate(0,-22)">
+                    <g>
+                      <animateTransform attributeName="transform" type="rotate" values="-17;17;-17" keyTimes="0;0.5;1" dur="2.6s" begin="0.52s" repeatCount="indefinite"/>
+                      <line x1="0" y1="0" x2="0" y2="-21" stroke="#00C896" stroke-width="7" stroke-linecap="round"/>
+                      <circle cx="0" cy="-21" r="3.2" fill="#00C896"/>
+
+                      <g transform="translate(0,-21)">
+                        <g>
+                          <animateTransform attributeName="transform" type="rotate" values="19;-19;19" keyTimes="0;0.5;1" dur="2.6s" begin="0.65s" repeatCount="indefinite"/>
+                          <line x1="0" y1="0" x2="0" y2="-20" stroke="#00C896" stroke-width="6" stroke-linecap="round"/>
+                          <!-- gripper -->
+                          <g transform="translate(0,-20)">
+                            <line x1="-5" y1="0" x2="-9" y2="-9" stroke="#00C896" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="5" y1="0" x2="9" y2="-9" stroke="#00C896" stroke-width="3" stroke-linecap="round"/>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
